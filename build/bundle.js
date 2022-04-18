@@ -3839,27 +3839,25 @@ var app = (function () {
     	let t6;
     	let div2;
     	let span1;
+    	let t7_value = /*filmDate*/ ctx[4](/*data*/ ctx[1].year, 2) + "";
+    	let t7;
     	let t8;
-    	let span2;
-    	let t9_value = /*filmDate*/ ctx[4](/*data*/ ctx[1].year, 2) + "";
     	let t9;
+    	let span2;
+    	let t10_value = /*data*/ ctx[1].runtime + "";
     	let t10;
     	let t11;
-    	let span3;
-    	let t12_value = /*data*/ ctx[1].runtime + "";
-    	let t12;
-    	let t13;
     	let div3;
     	let h30;
-    	let t14_value = /*data*/ ctx[1].tagline + "";
-    	let t14;
-    	let t15;
+    	let t12_value = /*data*/ ctx[1].tagline + "";
+    	let t12;
+    	let t13;
     	let h31;
-    	let t17;
+    	let t15;
     	let p;
-    	let t18_value = /*data*/ ctx[1].overview + "";
-    	let t18;
-    	let t19;
+    	let t16_value = /*data*/ ctx[1].overview + "";
+    	let t16;
+    	let t17;
     	let main;
     	let div8;
     	let iframe;
@@ -3896,93 +3894,86 @@ var app = (function () {
     			t6 = space();
     			div2 = element("div");
     			span1 = element("span");
-    			span1.textContent = "R";
+    			t7 = text(t7_value);
     			t8 = space();
-    			span2 = element("span");
-    			t9 = text(t9_value);
-    			t10 = space();
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
+    			t9 = space();
+    			span2 = element("span");
+    			t10 = text(t10_value);
     			t11 = space();
-    			span3 = element("span");
-    			t12 = text(t12_value);
-    			t13 = space();
     			div3 = element("div");
     			h30 = element("h3");
-    			t14 = text(t14_value);
-    			t15 = space();
+    			t12 = text(t12_value);
+    			t13 = space();
     			h31 = element("h3");
     			h31.textContent = "Обзор";
-    			t17 = space();
+    			t15 = space();
     			p = element("p");
-    			t18 = text(t18_value);
-    			t19 = space();
+    			t16 = text(t16_value);
+    			t17 = space();
     			main = element("main");
     			div8 = element("div");
     			iframe = element("iframe");
     			set_style(img, "border-radius", "8px");
     			attr_dev(img, "class", "h-100 shadow-3");
     			if (!src_url_equal(img.src, img_src_value = /*data*/ ctx[1].poster_path)) attr_dev(img, "src", img_src_value);
-    			add_location(img, file$2, 106, 20, 4199);
+    			add_location(img, file$2, 106, 20, 4196);
     			attr_dev(div0, "class", "d-flex py-3 h-100");
-    			add_location(div0, file$2, 105, 16, 4147);
-    			add_location(h20, file$2, 111, 24, 4438);
+    			add_location(div0, file$2, 105, 16, 4144);
+    			add_location(h20, file$2, 111, 24, 4435);
     			attr_dev(span0, "class", "");
-    			add_location(span0, file$2, 112, 46, 4510);
+    			add_location(span0, file$2, 112, 45, 4506);
     			attr_dev(h21, "class", "fw-light");
-    			add_location(h21, file$2, 112, 24, 4488);
+    			add_location(h21, file$2, 112, 24, 4485);
     			attr_dev(div1, "class", "d-flex");
-    			add_location(div1, file$2, 110, 20, 4393);
-    			attr_dev(span1, "class", "certification border p-1");
-    			set_style(span1, "border-radius", "2px");
-    			set_style(span1, "margin-right", "7px");
-    			add_location(span1, file$2, 119, 24, 4854);
-    			attr_dev(span2, "class", "release border p-1");
-    			add_location(span2, file$2, 125, 24, 5075);
-    			attr_dev(span3, "class", "time border p-1");
-    			add_location(span3, file$2, 132, 24, 5389);
-    			attr_dev(div2, "class", "d-flex facts mb-3");
-    			set_style(div2, "line-height", "10px");
+    			add_location(div1, file$2, 110, 20, 4390);
+    			attr_dev(span1, "class", "p-1");
+    			add_location(span1, file$2, 125, 24, 5017);
+    			attr_dev(span2, "class", "time p-1");
+    			add_location(span2, file$2, 132, 24, 5316);
+    			attr_dev(div2, "class", "d-flex");
     			set_style(div2, "border-radius", "2px");
     			set_style(div2, "margin-left", "7px");
     			set_style(div2, "margin-right", "7px");
-    			add_location(div2, file$2, 114, 20, 4617);
+    			add_location(div2, file$2, 114, 20, 4613);
     			set_style(h30, "font-size", "1.1em");
     			set_style(h30, "font-weight", "400");
     			set_style(h30, "font-style", "italic");
     			set_style(h30, "opacity", "0.7");
     			attr_dev(h30, "class", "text-start fst-italic");
-    			add_location(h30, file$2, 139, 24, 5592);
+    			add_location(h30, file$2, 139, 24, 5512);
     			attr_dev(h31, "class", "text-start");
-    			add_location(h31, file$2, 145, 24, 5891);
+    			add_location(h31, file$2, 145, 24, 5811);
     			attr_dev(p, "class", "text-start");
-    			add_location(p, file$2, 146, 24, 5949);
-    			add_location(div3, file$2, 138, 20, 5562);
+    			add_location(p, file$2, 146, 24, 5869);
+    			add_location(div3, file$2, 138, 20, 5482);
     			attr_dev(div4, "class", "d-flex flex-column w-100 text-white m-3");
-    			add_location(div4, file$2, 109, 16, 4319);
+    			add_location(div4, file$2, 109, 16, 4316);
     			attr_dev(div5, "class", "d-flex h-100 container");
-    			add_location(div5, file$2, 104, 12, 4094);
+    			add_location(div5, file$2, 104, 12, 4091);
     			attr_dev(div6, "class", "mask");
     			set_style(div6, "background", "linear-gradient( 45deg, rgba(79, 74, 58, 0.7), rgb(4%, 16%, 40%, 0.7) 100% )");
-    			add_location(div6, file$2, 98, 10, 3920);
-    			attr_dev(div7, "class", "text-center bg-image");
+    			add_location(div6, file$2, 98, 10, 3917);
+    			attr_dev(div7, "class", "bg-image");
     			set_style(div7, "background-image", "url(" + /*data*/ ctx[1].backdrop_path + ")");
     			set_style(div7, "height", "500px");
-    			add_location(div7, file$2, 91, 8, 3743);
+    			add_location(div7, file$2, 91, 8, 3752);
     			attr_dev(header, "class", "shadow-inner");
-    			add_location(header, file$2, 88, 4, 3670);
+    			add_location(header, file$2, 88, 4, 3679);
     			attr_dev(iframe, "id", "shadow");
     			set_style(iframe, "height", "inherit");
     			set_style(iframe, "width", "inherit");
     			if (!src_url_equal(iframe.src, iframe_src_value = "https:" + /*data*/ ctx[1].iframe_src)) attr_dev(iframe, "src", iframe_src_value);
-    			add_location(iframe, file$2, 156, 12, 6290);
+    			add_location(iframe, file$2, 156, 12, 6215);
     			attr_dev(div8, "class", "ratio ratio-16x9 d-flex justify-content-center align-items-center w-100 h-100");
-    			add_location(div8, file$2, 155, 8, 6186);
-    			attr_dev(main, "class", "container mt-5 border");
-    			add_location(main, file$2, 154, 6, 6141);
+    			add_location(div8, file$2, 155, 8, 6111);
+    			attr_dev(main, "class", "container mt-5 mb-5 border");
+    			add_location(main, file$2, 154, 6, 6061);
+    			attr_dev(div9, "class", "");
     			add_location(div9, file$2, 86, 0, 3611);
     		},
     		m: function mount(target, anchor) {
@@ -4007,28 +3998,26 @@ var app = (function () {
     			append_dev(div4, t6);
     			append_dev(div4, div2);
     			append_dev(div2, span1);
+    			append_dev(span1, t7);
     			append_dev(div2, t8);
-    			append_dev(div2, span2);
-    			append_dev(span2, t9);
-    			append_dev(div2, t10);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].m(div2, null);
     			}
 
-    			append_dev(div2, t11);
-    			append_dev(div2, span3);
-    			append_dev(span3, t12);
-    			append_dev(div4, t13);
+    			append_dev(div2, t9);
+    			append_dev(div2, span2);
+    			append_dev(span2, t10);
+    			append_dev(div4, t11);
     			append_dev(div4, div3);
     			append_dev(div3, h30);
-    			append_dev(h30, t14);
-    			append_dev(div3, t15);
+    			append_dev(h30, t12);
+    			append_dev(div3, t13);
     			append_dev(div3, h31);
-    			append_dev(div3, t17);
+    			append_dev(div3, t15);
     			append_dev(div3, p);
-    			append_dev(p, t18);
-    			append_dev(div9, t19);
+    			append_dev(p, t16);
+    			append_dev(div9, t17);
     			append_dev(div9, main);
     			append_dev(main, div8);
     			append_dev(div8, iframe);
@@ -4042,7 +4031,7 @@ var app = (function () {
 
     			if (dirty & /*data*/ 2 && t1_value !== (t1_value = /*data*/ ctx[1].ru_title + "")) set_data_dev(t1, t1_value);
     			if (dirty & /*data*/ 2 && t4_value !== (t4_value = /*filmDate*/ ctx[4](/*data*/ ctx[1].year, 1) + "")) set_data_dev(t4, t4_value);
-    			if (dirty & /*data*/ 2 && t9_value !== (t9_value = /*filmDate*/ ctx[4](/*data*/ ctx[1].year, 2) + "")) set_data_dev(t9, t9_value);
+    			if (dirty & /*data*/ 2 && t7_value !== (t7_value = /*filmDate*/ ctx[4](/*data*/ ctx[1].year, 2) + "")) set_data_dev(t7, t7_value);
 
     			if (dirty & /*genres*/ 1) {
     				each_value = /*genres*/ ctx[0];
@@ -4057,7 +4046,7 @@ var app = (function () {
     					} else {
     						each_blocks[i] = create_each_block$1(child_ctx);
     						each_blocks[i].c();
-    						each_blocks[i].m(div2, t11);
+    						each_blocks[i].m(div2, t9);
     					}
     				}
 
@@ -4068,9 +4057,9 @@ var app = (function () {
     				each_blocks.length = each_value.length;
     			}
 
-    			if (dirty & /*data*/ 2 && t12_value !== (t12_value = /*data*/ ctx[1].runtime + "")) set_data_dev(t12, t12_value);
-    			if (dirty & /*data*/ 2 && t14_value !== (t14_value = /*data*/ ctx[1].tagline + "")) set_data_dev(t14, t14_value);
-    			if (dirty & /*data*/ 2 && t18_value !== (t18_value = /*data*/ ctx[1].overview + "")) set_data_dev(t18, t18_value);
+    			if (dirty & /*data*/ 2 && t10_value !== (t10_value = /*data*/ ctx[1].runtime + "")) set_data_dev(t10, t10_value);
+    			if (dirty & /*data*/ 2 && t12_value !== (t12_value = /*data*/ ctx[1].tagline + "")) set_data_dev(t12, t12_value);
+    			if (dirty & /*data*/ 2 && t16_value !== (t16_value = /*data*/ ctx[1].overview + "")) set_data_dev(t16, t16_value);
 
     			if (dirty & /*data*/ 2) {
     				set_style(div7, "background-image", "url(" + /*data*/ ctx[1].backdrop_path + ")");
@@ -4161,7 +4150,7 @@ var app = (function () {
     			span = element("span");
     			t = text(t_value);
     			attr_dev(span, "class", "genre borders p-1");
-    			add_location(span, file$2, 129, 28, 5282);
+    			add_location(span, file$2, 129, 28, 5209);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
